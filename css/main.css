@@ -1,0 +1,213 @@
+html{
+    font-size: 100%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Lora';
+    align-items: center;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+header{
+    text-align: center;
+    margin: 2em;
+    border-bottom: 1px solid black;
+}
+
+nav{
+    margin: 4em;
+}
+
+nav ul{
+    display: flex;
+    gap: 2em;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+nav ul li a{
+    text-decoration: none;
+    align-items: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 2rem;
+    position: relative;
+}
+
+nav ul li a.active::before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 33%;
+    border-bottom: 2px solid black;
+    bottom: 0;
+}
+
+nav ul li a:before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 0%;
+    border-bottom: 2px solid rgb(158, 158, 158);
+    bottom: 0;
+    transition: 0.3s;
+}
+
+main{
+    display: grid;
+    gap: 0em 3em;
+    margin-top: 5em;
+    border-bottom: 1px solid black;
+}
+
+
+.columns{
+    display: flex;
+    width: 1200px;
+}
+
+.left-col{
+    margin-right: 2em;
+}
+
+h1{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-family: 'Lora';
+    text-decoration: none;
+}
+
+.subhead{
+    font-size: x-large;
+    font-family: 'Crimson Text';
+    line-height: 100%;
+    margin: 0;
+}
+
+.backphoto{
+    display: flex;
+    background-image: url('/images/ADVOKATSKA-KOMORA.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 1200px;
+    transition: background-size 1000ms;
+}
+
+.blog-photos{
+    display: flex;
+    background-image: url('/images/ADVOKATSKA-KOMORA.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 1200px;
+    transition: background-size 1000ms;
+}
+
+.btn{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: 15em auto;
+    border: 1px solid white;
+    padding: 1em;
+}
+
+.aktuelnosti{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: 27em auto;
+    border: 1px solid white;
+}
+
+.blog-btn{
+    position: absolute;
+    top:104%;
+    background-color:#762206;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+}
+
+.maincard-details{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    
+}
+
+.maincard-details:before{
+
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 0%;
+    border-bottom: 2px solid white;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.card{
+    display: flex;
+    width: 1200px;
+    border-radius: 1em;
+}
+
+.card1{
+    margin: 0em 2em 2em 2em;
+    border-radius: 1em;
+}
+
+.usluge{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+a.usluge::before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 0%;
+    border-bottom: 2px solid black;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+
+/* animations */
+
+nav ul li a:hover::before{
+    width: 33%;
+}
+
+.backphoto:hover{
+    background-size: 110%;
+}
+
+.maincard-details:hover::before{
+    width: 100%;
+}
+
+a.usluge:hover::before{
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
